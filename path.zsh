@@ -17,4 +17,4 @@ export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
 # export PATH="$DOTFILES/bin:$PATH"
 
 # Local bin directories before anything else
-export PATH="/usr/local/bin:/usr/local/sbin:~/.composer/vendor/bin:$PATH"
+export PATH="$HOME/.composer/vendor/bin:/usr/local/bin:/usr/local/sbin:$PATH"
