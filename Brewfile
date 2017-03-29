@@ -30,7 +30,7 @@ brew 'trash'
 brew 'wget'
 
 # Development
-brew 'php71', args: ['with-debug']
+brew 'php71',
 brew 'php71-intl'
 brew 'mariadb'
 
