@@ -1,4 +1,4 @@
-# Dries's Dotfiles
+# A Spinoff of Dries's Dotfiles (everything below was written by him)
 
 ## What Is This?
 
