@@ -1,3 +1,28 @@
+# Installation instructions (Joshua Bedford's Version)
+
+Though the instructions Dries's Dotfiles contain are fantastic, I've found a few of the steps to be unnecessary. So here are the steps that have worked for me:
+
+1. Update MacOS to the newest available version.
+2. Download the dotfiles.
+3. Now lets install. Run:
+    - 'mv ~/Downloads/dotfiles-master ~/.dotfiles' (this assumes you download a folder `dotfiles-master` to a mac Downloads folder)
+    - 'cd ~/.dotfiles' (move into the dotfiles directory)
+    - 'chmod a+x ./install.sh' (make sure its permissions are executable)
+    - './install.sh' (run the install script)
+    -- [copy and paste version] `mv ~/Downloads/dotfiles-master ~/.dotfiles && cd ~/.dotfiles && chmod a+x ./install.sh && ./install.sh`
+4. Now everything should be installed and ready to configure (you must configure Sublime Text and setup MySQL aka MariaDB).
+5. Restart your computer to finalize all changes.
+
+This does not account for every scenario. Sometimes after installing .oh-my-zsh I've found the terminal will restart and cancel the script. If this is the case, run `./failed-at-oh-my-zsh-install` and it should start the script from right after where it failed. Not the most elegant solution, but until I have time to look into it, it must suffice.
+
+** Note: In the original guide, it asks to install the xcode command line tools manually, but I've found that brew now does that automatically as dependencies needed for the script. It's easier for me to allow Brew to handle it rather than manually complete the process.
+
+See below for some more great notes from Dries's dotfiles, or go visit his repository for the untouched (and newest) version.
+
+
+---------------------------------------------------------------------------------
+
+
 # A Spinoff of Dries's Dotfiles (everything below was written by him)
 
 ## What Is This?
@@ -8,20 +33,7 @@ Read the blog post: https://driesvints.com/blog/getting-started-with-dotfiles
 
 ## A Fresh macOS Setup
 
-Follow these install instructions to setup a new Mac.
-
-1. Update macOS to the latest version with the App Store
-2. Install Xcode from the App Store, open it and accept the license agreement
-3. Install macOS Command Line Tools by running `xcode-select --install`
-4. Copy public and private SSH keys to `~/.ssh` and make sure they're set to `600`
-5. Clone this repo to `~/.dotfiles`
-6. Append `/usr/local/bin/zsh` to the end of your `/etc/shells` file
-7. Run `install.sh` to start the installation
-8. Make sure Dropbox is set up and synced
-9. Restore preferences by running `mackup restore`
-10. Restart your computer to finalize the process
-
-Your Mac is now ready to use!
+He formerly had installation instructions for setting up a fresh macbook, but I've updated to fit my fork. See above.
 
 > Note: you can use a different location than `~/.dotfiles` if you want. Just make sure you also update the reference in the `.zshrc` file.
 
