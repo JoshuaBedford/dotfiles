@@ -1,5 +1,5 @@
-### INSTALL FAILED AFTER oh-my-zsh INSTALL? RUN THIS ###
-# Note: This is a rare condition, but it happened once and I had to do this to complete it. So here it is!
+### PART 2: Setup the Laravel dev environment. ###
+# Note: This requires part 1 (terminal setup) to be completed!
 
 # Install Composer
 curl -sS https://getcomposer.org/installer | php
