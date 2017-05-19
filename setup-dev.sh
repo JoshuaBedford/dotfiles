@@ -1,6 +1,9 @@
 ### PART 2: Setup the Laravel dev environment. ###
 # Note: This requires part 1 (terminal setup) to be completed!
 
+# Add directory to path for laravel and valet support
+echo "export PATH=$HOME/.composer/vendor/bin:$PATH" >> ~/.zshrc
+
 # Install Composer
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
