@@ -7,9 +7,12 @@ Though the instructions Dries's Dotfiles contain are fantastic, I've found a few
 3. Now lets install. Run:
     - `mv ~/Downloads/dotfiles-master ~/.dotfiles` (this assumes you download a folder `dotfiles-master` to a mac Downloads folder)
     - `cd ~/.dotfiles` (move into the dotfiles directory)
-    - `chmod a+x ./install.sh` (make sure its permissions are executable)
-    - `./install.sh` (run the install script)
-    -- [copy and paste version] `mv ~/Downloads/dotfiles-master ~/.dotfiles && cd ~/.dotfiles && chmod a+x ./install.sh && ./install.sh`
+    - `chmod a+x ./setup-terminal.sh ./setup-dev.sh` (make sure permissions are executable)
+    - `./setup-terminal.sh` (run the terminal setup script)
+    - `./setup-dev.sh` (run the dev environment setup script)
+    - [copy and paste versions] 
+        1) `mv ~/Downloads/dotfiles-master ~/.dotfiles && cd ~/.dotfiles && chmod a+x ./setup-terminal.sh ./setup-dev.sh && ./setup-terminal.sh`
+        2) `./setup-dev.sh`
 4. Now everything should be installed and ready to configure (you must configure Sublime Text and setup MySQL aka MariaDB).
 5. Restart your computer to finalize all changes.
 
