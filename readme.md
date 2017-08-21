@@ -16,7 +16,7 @@ Though the instructions Dries's Dotfiles contain are fantastic, I've found a few
 4. Now everything should be installed and ready to configure (you must configure Sublime Text and setup MySQL aka MariaDB).
 5. Restart your computer to finalize all changes.
 
-This does not account for every scenario. Sometimes after installing .oh-my-zsh I've found the terminal will restart and cancel the script. If this is the case, run `./failed-at-oh-my-zsh-install` and it should start the script from right after where it failed. Not the most elegant solution, but until I have time to look into it, it must suffice.
+This does not account for every scenario. The original dotfile I based mine off of (see below) did not have to use two separate files. Because this also installs and configures oh-my-zsh, it reloads the terminal after oh-my-zsh and stops the execution of the script. Because of this, we have the 'setup-terminal' script and the 'setup-dev' script which setup the terminal for zsh, php, mysql, etc, and install a development environment separately.
 
 ** Note: In the original guide, it asks to install the xcode command line tools manually, but I've found that brew now does that automatically as dependencies needed for the script. It's easier for me to allow Brew to handle it rather than manually complete the process.
 
