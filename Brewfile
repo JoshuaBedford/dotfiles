@@ -3,7 +3,7 @@ tap 'caskroom/cask'
 tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
-tap 'homebrew/dupes'
+# tap 'homebrew/dupes' # deprecated and removed
 tap 'homebrew/php'
 
 # Install ZSH
@@ -17,7 +17,7 @@ brew 'coreutils'
 brew 'findutils'
 
 # Install more recent versions of some macOS tools
-brew 'homebrew/dupes/grep'
+# brew 'homebrew/dupes/grep' # deprecated and removed
 
 # Install Binaries
 brew 'awscli'
