@@ -34,7 +34,7 @@ brew 'wget'
 
 # Development
 brew 'php71'
-brew 'php71-intl'
+# brew 'php71-intl' # no longer a formula
 brew 'mariadb'
 
 # Apps
