@@ -19,6 +19,9 @@ brew 'findutils'
 # Install more recent versions of some macOS tools
 # brew 'homebrew/dupes/grep' # deprecated and removed
 
+# Install wget
+brew 'wget'
+
 # Install Binaries
 brew 'awscli'
 brew 'git'
