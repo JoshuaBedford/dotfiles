@@ -40,7 +40,6 @@ brew 'mariadb'
 # Apps
 cask 'dropbox'
 cask 'google-chrome'
-cask 'google-drive'
 cask 'sequel-pro'
 cask 'shuttle'
 cask 'slack'
