@@ -19,3 +19,12 @@ chsh -s $(which zsh)
 
 # Install Oh-My-ZSH
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+# Create a Sites directory
+# This is a default directory for macOS user accounts but doesn't come pre-installed
+mkdir $HOME/Sites
+cd $HOME/.dotfiles
+
+# Set macOS preferences
+# We will run this last because this will reload the shell
+source .macos
