@@ -27,4 +27,5 @@ cd $HOME/.dotfiles
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
-source .macos
+# Uncomment to configure mac settings automatically.
+# source .macos
