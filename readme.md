@@ -24,6 +24,9 @@ This does not account for every scenario. The original dotfile I based mine off 
 
 See below for some more great notes from Dries's dotfiles, or go visit his repository for the untouched (and newest) version.
 
+## Lando ZSH (Plugin)
+While we are on the topic, checkout [Lando ZSH](https://github.com/JoshuaBedford/lando-zsh). It's a useful little plugin to be able to use normal commands rather than typing 'lando' in front of every command.
+
 
 ---------------------------------------------------------------------------------
 
