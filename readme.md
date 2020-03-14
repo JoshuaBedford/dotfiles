@@ -1,6 +1,6 @@
-# Installation instructions (Joshua Bedford's Version)
+# Installation instructions
 
-Though the instructions Dries's Dotfiles contain are fantastic, I've found a few of the steps to be unnecessary. So here are the steps that have worked for me:
+Though the instructions Dries's Dotfiles contain are fantastic, my personal touches have rendered some of the steps unnecessary or inaccurate.
 
 1. Update MacOS to the newest available version.
 2. Download the dotfiles.
@@ -12,12 +12,13 @@ Though the instructions Dries's Dotfiles contain are fantastic, I've found a few
         - `./setup.sh` (run the setup script)
     - Short version
         - `mv ~/Downloads/dotfiles-master ~/.dotfiles && cd ~/.dotfiles && chmod a+x ./setup.sh && ./setup.sh`
+4. Want to automatically configure macOS settings? 
+    - *Note* These are configured to my preference and may include settings you do not wish to have.
+    - `source .macos`
+5. Now everything should be installed and ready to configure (assuming you uncommented and installed it, you must configure Sublime Text to your preference).
+6. Restart your computer to finalize all changes.
 
-
-4. Now everything should be installed and ready to configure (assuming you installed it, you must configure Sublime Text to your preference).
-5. Restart your computer to finalize all changes.
-
-This does not account for every scenario. The original dotfile I based mine off of's README is below. Because this also installs and configures oh-my-zsh, it reloads the terminal after oh-my-zsh and stops the execution of the script. Because of this, we have the 'setup' script and the 'configure-system' script which setup the terminal for zsh, php, mysql, etc, and install a development environment separately.
+This does not account for every scenario. The original dotfile I based mine off of's README is below. Because this also installs and configures oh-my-zsh, it reloads the terminal after oh-my-zsh and stops the execution of the script. Because of this, if you wish to extend this you will need to have another 
 
 ** Note: In the original guide, it asks to install the xcode command line tools manually, but I've found that brew now does that automatically as dependencies needed for the script. It's easier for me to allow Brew to handle it rather than manually complete the process.
 
