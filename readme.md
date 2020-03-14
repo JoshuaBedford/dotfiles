@@ -4,19 +4,20 @@ Though the instructions Dries's Dotfiles contain are fantastic, I've found a few
 
 1. Update MacOS to the newest available version.
 2. Download the dotfiles.
-3. Now lets install. Run:
-    - `mv ~/Downloads/dotfiles-master ~/.dotfiles` (this assumes you download a folder `dotfiles-master` to a mac Downloads folder)
-    - `cd ~/.dotfiles` (move into the dotfiles directory)
-    - `chmod a+x ./setup-terminal.sh ./setup-dev.sh` (make sure permissions are executable)
-    - `./setup-terminal.sh` (run the terminal setup script)
-    - `./setup-dev.sh` (run the dev environment setup script)
-    - [copy and paste versions] 
-        1) `mv ~/Downloads/dotfiles-master ~/.dotfiles && cd ~/.dotfiles && chmod a+x ./setup-terminal.sh ./setup-dev.sh && ./setup-terminal.sh`
-        2) `./setup-dev.sh`
-4. Now everything should be installed and ready to configure (you must configure Sublime Text and setup MySQL aka MariaDB).
+3. Now lets install. Two options:
+    - Long Version
+        - `mv ~/Downloads/dotfiles-master ~/.dotfiles` (this assumes you download a folder `dotfiles-master` to a mac `~/Downloads` folder)
+        - `cd ~/.dotfiles` (move into the dotfiles directory)
+        - `chmod a+x ./setup.sh` (make sure permissions are executable)
+        - `./setup.sh` (run the setup script)
+    - Short version
+        - `mv ~/Downloads/dotfiles-master ~/.dotfiles && cd ~/.dotfiles && chmod a+x ./setup.sh && ./setup.sh`
+
+
+4. Now everything should be installed and ready to configure (assuming you installed it, you must configure Sublime Text to your preference).
 5. Restart your computer to finalize all changes.
 
-This does not account for every scenario. The original dotfile I based mine off of (see below) did not have to use two separate files. Because this also installs and configures oh-my-zsh, it reloads the terminal after oh-my-zsh and stops the execution of the script. Because of this, we have the 'setup-terminal' script and the 'setup-dev' script which setup the terminal for zsh, php, mysql, etc, and install a development environment separately.
+This does not account for every scenario. The original dotfile I based mine off of's README is below. Because this also installs and configures oh-my-zsh, it reloads the terminal after oh-my-zsh and stops the execution of the script. Because of this, we have the 'setup' script and the 'configure-system' script which setup the terminal for zsh, php, mysql, etc, and install a development environment separately.
 
 ** Note: In the original guide, it asks to install the xcode command line tools manually, but I've found that brew now does that automatically as dependencies needed for the script. It's easier for me to allow Brew to handle it rather than manually complete the process.
 
